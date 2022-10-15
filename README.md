@@ -1,5 +1,14 @@
 # PacBio_HepB
 
+This is a repository of scripts used to prepare the paper (add reference)
+It aligns PacBio Isoseq reads from Hepatitis B infected/transfected hepatocyte cell lines and performs differential gene/transcript expression and chimera detection.
+The directories are as follows
+Reference - stores the hepatitis B fasta and GTF files. Human files are large and can be downloaded from the Gencode website (further details in ReadMe in directory)
+Data - this is where the raw fastq files are stored
+Align_and_Quantify - this aligns the reads to viral and human genomes and quantifies them
+Differential - this performs differential expression and gene set enrichment analysis
+Chimera - this extracts soft clipped reads, remaps them and then then remaps them to the human genome
+
 Packages used
 1. Samtools (http://www.htslib.org/)
 2. PBMM2 (https://github.com/PacificBiosciences/pbmm2)
