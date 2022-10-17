@@ -10,9 +10,11 @@ Differential - this performs differential expression and gene set enrichment ana
 Chimera - this extracts soft clipped reads, remaps them and then then remaps them to the human genome<br/>
 
 Packages used<br/>
-1. Samtools (http://www.htslib.org/)<br/>
-2. PBMM2 (https://github.com/PacificBiosciences/pbmm2)<br/>
-3. R Version 4.1.2 with Bioconductor (https://www.bioconductor.org/)<br/>
+1. R Version 4.1.2 with Bioconductor (https://www.bioconductor.org/)<br/>
+2. Samtools (http://www.htslib.org/)<br/>
+3. PBMM2 (https://github.com/PacificBiosciences/pbmm2)<br/>
+
+Unfortunately, at the time of writing, pbmm2 is not available in a Mac OS compatible format.
 
 Bioconductor packages:<br/>
 Rsubread_2.8.0<br/>
