@@ -1,4 +1,5 @@
 This folder contains the reference files for the HBV clone used in the experiments (fasta format sequence and the GTF annotation file).
+The sequence of the plasmid backbone (pUC57) used for the HBV1.3 construct is also included.
 
 
 Human files should be downloaded from here
