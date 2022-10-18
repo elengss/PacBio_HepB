@@ -17,6 +17,7 @@ Packages used<br/>
 Samtools and pbmm2 are both downloadable as conda packages:
 
 conda install -c bioconda samtools
+
 conda install -c bioconda pbmm2
 
 Mored details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
