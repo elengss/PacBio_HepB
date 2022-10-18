@@ -40,7 +40,7 @@ S4Vectors_0.32.0<br/>
 BiocGenerics_0.40.0<br/>
 clusterProfiler_4.2.2<br/>
 
-They can be installed and loaded with this commands in R : <br/><br/>
+They can be installed and loaded with this command in R : <br/><br/>
 bio_pkgs <- c("Rsubread","edgeR","limma","GenomicAlignments","Rsamtools","Biostrings","XVector","SummarizedExperiment","Biobase","MatrixGenerics","matrixStats","GenomicRanges","GenomeInfoDb","IRanges","S4Vectors","BiocGenerics","clusterProfiler")<br/>
 BiocManager::install(bio_pkgs)<br/><br/>
 Cut and paste tha above command into R or Rstudio to install all the required packages.
