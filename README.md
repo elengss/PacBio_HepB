@@ -20,7 +20,7 @@ conda install -c bioconda samtools
 
 conda install -c bioconda pbmm2
 
-Mored details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
+More details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
 
 Bioconductor packages:<br/>
 Rsubread_2.8.0<br/>
