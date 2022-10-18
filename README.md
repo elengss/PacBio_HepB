@@ -14,7 +14,12 @@ Packages used<br/>
 2. Samtools (http://www.htslib.org/)<br/>
 3. PBMM2 (https://github.com/PacificBiosciences/pbmm2)<br/>
 
-Unfortunately, at the time of writing, pbmm2 is not available in a Mac OS compatible format.
+Samtools and pbmm2 are both downloadable as conda packages:
+
+conda install -c bioconda samtools
+conda install -c bioconda pbmm2
+
+Mored details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
 
 Bioconductor packages:<br/>
 Rsubread_2.8.0<br/>
