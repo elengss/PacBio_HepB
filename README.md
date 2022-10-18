@@ -16,9 +16,8 @@ Packages used<br/>
 
 Samtools and pbmm2 are both downloadable as conda packages:
 
-conda install -c bioconda samtools
-
-conda install -c bioconda pbmm2
+conda install -c bioconda samtools<br/>
+conda install -c bioconda pbmm2<br/>
 
 More details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
 
@@ -43,5 +42,5 @@ clusterProfiler_4.2.2<br/>
 
 They can be installed and loaded with these commands in R<br/>
 bio_pkgs <- c("Rsubread","edgeR","limma","GenomicAlignments","Rsamtools","Biostrings","XVector","SummarizedExperiment","Biobase","MatrixGenerics","matrixStats","GenomicRanges","GenomeInfoDb","IRanges","S4Vectors","BiocGenerics","clusterProfiler")<br/>
-BiocManager::install(bio_pkgs)<br/>
-invisible(lapply(pkgs, function(x) library(x, character.only=TRUE)))<br/>
+BiocManager::install(bio_pkgs)<br/><br/>
+Cut and paste tha above command into R or Rstudio to install all the required packages.
