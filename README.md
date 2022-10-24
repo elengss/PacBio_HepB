@@ -1,6 +1,6 @@
 # PacBio_HepB
 
-This is a repository of scripts used to prepare the paper (add reference) <br/>
+This is a repository of the scripts used to prepare the paper. <br/>
 It aligns PacBio Isoseq reads from Hepatitis B infected/transfected hepatocyte cell lines and performs differential gene/transcript expression and chimera detection. <br/>
 The directories are as follows <br/>
 Reference - stores the hepatitis B fasta and GTF files. Human files are large and can be downloaded from the Gencode website (further details in ReadMe in directory) <br/>
