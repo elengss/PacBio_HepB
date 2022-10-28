@@ -1,16 +1,17 @@
-This folder contains the reference files for the HBV clone used in the experiments (fasta format sequence and the GTF annotation file).
+This folder contains the reference files for the HBV genotype D clone (GenBank ID NC_003977.2) used in the experiments.
+
+The D3L fasta file is 3581 bp and runs from the first TSS for preCore (preC-L, 1525) to the TATAAA Poly Adenylation Site (PAS, 1918-1923). The coordinates used in the GTF file are adjusted accordingly. 
+
 The sequence of the plasmid backbone (pUC5.fa) used for the HBV1.3 construct is also included.
 
 The Ensemble database annotation file for the human transcriptome (ENST_ENSG_GN), used in the differential expression analysis 
-(differential.R) and identification of chimaeric transcript (quantify_human_chimare.R) is also included.
-
-Esther - fastqover4 still missing...
+(differential.R) and for identification of chimeric transcripts (quantify_human_chimare.R) is also included.
 
 Human fasta and GTF files should be downloaded from here :
 
-https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_41/gencode.v41.primary_assembly.annotation.gtf.gz
 https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_41/GRCh38.p13.genome.fa.gz
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_41/gencode.v41.primary_assembly.annotation.gtf.gz
 
-The downloaded .gz archive files should be decompressed (unzip utility) before use to give the files gencode.v40.chr_patch_hapl_scaff.annotation.gtf
-and GRCh38.p13.genome.fa
+The downloaded .gz archive files should be decompressed (unzip utility) before use to give the files GRCh38.p13.genome.fa and gencode.v40.chr_patch_hapl_scaff.annotation.gtf
+
 
