@@ -9,8 +9,8 @@ The oringnal sample names, the replicates to which they belong,the Iso-Seq Expre
 
 Fastq files :
 Sample name	Sample group 	Primer	Fastq file name							MD5 Checksum
-WT-a	 	     WT		bc1002	demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq	3e796d297d69b2fae759962bb8d5d488
-WT-b	  	   WT		bc1003	demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8
+WT-a          WT		bc1002	demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq	3e796d297d69b2fae759962bb8d5d488
+WT-b          WT		bc1003	demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8
 siCTCF-a  	siCTCF		bc1004	demultiplex.dT_bc1004RC_PB_3p--dT_PB_5p.hifi_reads.fastq	af753c08d9b1536224dd2331b608ec7f
 siCTCF-b	siCTCF		bc1009	demultiplex.dT_bc1009RC_PB_3p--dT_PB_5p.hifi_reads.fastq	6bcb757640b915274d410e294b27c0c9
 HBV1.3-a	HBV1.3		bc1010	demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq	98dc193ac130bc8c1df912b813bec67d
