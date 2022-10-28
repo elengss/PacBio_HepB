@@ -5,7 +5,9 @@ echo " "
 ECHO "PROCESSING FOR HBV READS"
 echo "Time for a coffee break"
 ### MAP TO HEP B D3L
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do pbmm2 align --sort --preset ISOSEQ /reference/D3L.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz "$tmp"_D3L.bam; done
+for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
+echo processing "$tmp" for HBV
+pbmm2 align --sort --preset ISOSEQ /reference/D3L.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz "$tmp"_D3L.bam; done
 
 
 echo " "
@@ -34,7 +36,9 @@ echo "More like lunch than a coffee break"
 echo " "
 
 ### MAP TO HUMAN
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do pbmm2 align --sort --preset ISOSEQ /reference/GRCh38.p13.genome.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz "$tmp"_prec_iso_fq_human.bam; done
+for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
+echo processing "$tmp" for Human
+pbmm2 align --sort --preset ISOSEQ /reference/GRCh38.p13.genome.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz "$tmp"_prec_iso_fq_human.bam; done
 echo " "
 echo "SCRIPT FINISHED"
 echo " "
