@@ -48,3 +48,7 @@ echo " "
 echo "SCRIPT FINISHED"
 echo " "
 
+
+#### fastqlines is a file that contains a list of the number of lines in each fastq file, which can be divided by 4 to get number of reads for normalization in downstream steps
+for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
+wc -l /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz >> fastqlines; done
