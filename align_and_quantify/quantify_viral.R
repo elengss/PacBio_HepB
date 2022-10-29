@@ -43,6 +43,40 @@ cant->allcant[[i]]
 print(i)
 }
 
+
+
+#### fastqlines is a file that contains a list of the number of lines in each fastq file (obtained using the shell command “wc -l < filename”).
+for i in 1002 1003 1004 1009 1010 1012 1013 1015
+do
+wc -l $i
+
+read.table("/reference/fastqlines",header=F)->fqlines
+
+#### Each sequence takes up 4 lines in the file, therefore the number of sequences in a file is 1/4 of the total number of lines present :
+
+numseqs <- fqlines/4  
+
+#### (sorry, I still can’t get my head round fqlines/4 -> numseqs).
+
+ 
+
+Followed by :
+
+                count=allcant[[i]]/numseqs[i,1])
+
+in the relevant place.
+
+ 
+
+Although it’s more efficient as you wrote it, I think a file entry like this :
+
+File         # Lines
+
+1002      1154712
+
+1003      760564
+
+
 #### fastqover4 is a file that contains a vector of library sizes to be normalised by
 read.table("fastqover4",header=F)->fq
 pdf("canonical_transcripts_D3L.start_only.norm_by_reads.pdf")
