@@ -64,12 +64,3 @@ samtools view -o "$tmp".positive.end.humanviralplasmid.filt100.plasmid30.sam "$t
 samtools view -o "$tmp".negative.start.humanviralplasmid.filt100.plasmid30.sam "$tmp".negative.start.humanviralplasmid.filt100.plasmid30.bam
 samtools view -o "$tmp".negative.end.humanviralplasmid.filt100.plasmid30.sam "$tmp".negative.end.humanviralplasmid.filt100.plasmid30.bam
 done
-
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
-do
-echo counting sam file lines for "$tmp"
-wc -l "$tmp".positive.start.humanviralplasmid.filt100.plasmid30.sam
-wc -l "$tmp".positive.end.humanviralplasmid.filt100.plasmid30.sam 
-wc -l "$tmp".negative.start.humanviralplasmid.filt100.plasmid30.sam
-wc -l "$tmp".negative.end.humanviralplasmid.filt100.plasmid30.sam
-done
