@@ -1,5 +1,5 @@
 ######## reads in gtf file and outputs matrix of start/end coordinates and intron junctions - saved in an R object called intronnew.Rd
-read.table("/data/D3L-everything+tss_unique.gtf",fill=T)->d3
+read.table("/reference/D3L-everything+tss_unique.gtf",fill=T)->d3
 d3[(nrow(d3)-6):nrow(d3),]->d3n ### this gtf file is specific to HepB - the last 6 lines are removed as they as canonical transcripts with no introns
 d3[1:(nrow(d3)-7),]->d3
 d3[which(d3$V3=="exon"),]->exonname
