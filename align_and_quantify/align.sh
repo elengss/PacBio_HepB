@@ -12,7 +12,7 @@ gunzip /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz
 ### Count the lines in the file and store in the fle "fastqlines"
 #### fastqlines is a file that contains a list of the number of lines in each fastq file, which can be divided by 4 to get number of reads for normalization in downstream steps
 wc -l /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq >> fastqlines
-### align sequences to D3L.fa referent genome :
+### align sequences to D3L.fa referent viral genome :
 pbmm2 align --sort --preset ISOSEQ /reference/D3L.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq "$tmp"_D3L.bam; done
 echo " "
 echo "Files processed, HBV aignments complete, number of lines in each fastq file are :"
@@ -49,7 +49,8 @@ echo " "
 ### MAP TO HUMAN
 for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
 echo aligning "$tmp" for Human
-pbmm2 align --sort --preset ISOSEQ /reference/GRCh38.p13.genome.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq.gz "$tmp"_prec_iso_fq_human.bam; done
+### align sequences to GRCh38 referent human genome :
+pbmm2 align --sort --preset ISOSEQ /reference/GRCh38.p13.genome.fa /data/demultiplex.dT_bc"$tmp"RC_PB_3p--dT_PB_5p.hifi_reads.fastq "$tmp"_prec_iso_fq_human.bam; done
 echo " "
 echo "SCRIPT FINISHED"
 echo " "
