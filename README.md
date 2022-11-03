@@ -11,7 +11,7 @@ Chimera - this extracts soft clipped reads, remaps them and then then remaps the
 The shell scripts set a variable called "home" to define the directory paths used.</br>
 There is a small utility "Findhome.sh" which can find the value for that variable on the system running these scripts.</br>
 On most systems scripts are run by adding "./" in front of the script name, for example: ./Findhome.sh</br>
-Many Linux systems require the script be declared as executable using the "chmod" command, for example: chmod +x Findhome.sh</br>
+Many Linux systems require the script be declared as executable using the "chmod" command, for example: chmod +x Findhome.sh</br><hr>
 
 Packages used<br/>
 1. R Version 4.1.2 with Bioconductor (https://www.bioconductor.org/)<br/>
@@ -21,7 +21,11 @@ Packages used<br/>
 Samtools and pbmm2 are both downloadable as conda packages:
 
 conda install -c bioconda samtools<br/>
-conda install -c bioconda pbmm2<br/>
+conda install -c bioconda pbmm2<br/><br/>
+
+On some systems the conda package manager has to be loaded before running the shell scripts, on our system the command is :</br>
+conda activate XXXX</br>
+where "XXXX" is the name of the conda environment</br></br>
 
 More details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
 
