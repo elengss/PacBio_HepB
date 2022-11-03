@@ -7,11 +7,11 @@ Reference - stores the hepatitis B fasta and GTF files. Human files are large an
 Data - this is where the raw fastq files are stored<br/>
 Align_and_Quantify - this aligns the reads to viral and human genomes and quantifies them<br/>
 Differential - this performs differential expression and gene set enrichment analysis<br/>
-Chimera - this extracts soft clipped reads, remaps them and then then remaps them to the human genome<br/>
-The shell scripts set a variable called "home" to define the directory paths used.
-There is a small utility "Findhome.sh" which can find the value for that variable on the system running these scripts.
-On most systems scripts are run by adding "./" in front of the script name, for example ./Findhome.sh
-Many Linux systems require the script be declared as executable using the "chmod" command, for example chmod +x Findhome.sh
+Chimera - this extracts soft clipped reads, remaps them and then then remaps them to the human genome<br/></br>
+The shell scripts set a variable called "home" to define the directory paths used.</br>
+There is a small utility "Findhome.sh" which can find the value for that variable on the system running these scripts.</br>
+On most systems scripts are run by adding "./" in front of the script name, for example ./Findhome.sh</br>
+Many Linux systems require the script be declared as executable using the "chmod" command, for example chmod +x Findhome.sh</br>
 
 Packages used<br/>
 1. R Version 4.1.2 with Bioconductor (https://www.bioconductor.org/)<br/>
