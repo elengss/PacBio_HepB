@@ -27,7 +27,7 @@ On some systems the conda package manager has to be loaded before running the sh
 conda activate XXXX</br>
 where "XXXX" is the name of the conda environment</br></br>
 
-More details on the Conda and Anaconda package manager system can be found here : https://anaconda.org
+More details on the Conda and Anaconda package manager system can be found here : https://anaconda.org<hr>
 
 Bioconductor packages:<br/>
 Rsubread_2.8.0<br/>
