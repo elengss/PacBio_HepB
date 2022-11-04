@@ -13,7 +13,7 @@ WT-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WT&nbsp;&nbsp;bc1002&nbsp;&nbsp;demultiplex.dT
 WT-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WT&nbsp;&nbsp;bc1003&nbsp;&nbsp;demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8</br>
 siCTCF-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;siCTCF&nbsp;&nbsp;bc1004	demultiplex.dT_bc1004RC_PB_3p--dT_PB_5p.hifi_reads.fastq	af753c08d9b1536224dd2331b608ec7f</br>
 siCTCF-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;siCTCF&nbsp;&nbsp;bc1009	demultiplex.dT_bc1009RC_PB_3p--dT_PB_5p.hifi_reads.fastq	6bcb757640b915274d410e294b27c0c9</br>
-HBV1.3-a&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HBV1.3&nbsp;&nbsp;bc1010	demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq	98dc193ac130bc8c1df912b813bec67d</br>
+HBV1.3-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HBV1.3&nbsp;&nbsp;bc1010	demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq	98dc193ac130bc8c1df912b813bec67d</br>
 HBV1.3-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HBV1.3&nbsp;&nbsp;bc1012	demultiplex.dT_bc1012RC_PB_3p--dT_PB_5p.hifi_reads.fastq	b7c718ffa76abc78fd1a351d1fb77484</br>
 BS1-2-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BS1-2&nbsp;&nbsp;bc1013	demultiplex.dT_bc1013RC_PB_3p--dT_PB_5p.hifi_reads.fastq	7f782f665c73c12d42e498ae56df04fc</br>
 BS1-2-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BS1-2&nbsp;&nbsp;bc1015	demultiplex.dT_bc1015RC_PB_3p--dT_PB_5p.hifi_reads.fastq	c32449e3b51b80a671afcdb4f43106e3</br>
