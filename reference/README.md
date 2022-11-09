@@ -1,6 +1,6 @@
 <h3>This folder contains the reference files for the HBV genotype D clone (GenBank ID NC_003977.2) used in the experiments.</h3>
 
-<p>The D3L fasta file is 3581 bp and runs from the first TSS for preCore (preC-L, 1525) to the TATAAA Poly Adenylation Site (PAS, 1918-1923).</br> 
+<p>The D3L fasta file used as our referent is 3581 bp and runs from the first TSS for preCore (preC-L, 1525) to the TATAAA Poly Adenylation Site (PAS, 1918-1923).</br> 
 The coordinates used in the GTF file are adjusted accordingly. The original GTF file of spliced transcripts is from the following paper :</br>
 Quantitative analysis of the splice variants expressed by the major hepatitis B virus genotypes</br>
 C. S. Lim, V. Sozzi, M. Littlejohn, L. K. W. Yuen, N. Warner, B. Betz-Stablein, et al.</br>
