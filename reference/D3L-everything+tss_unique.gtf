@@ -117,5 +117,5 @@ D3L	stdin	exon	223	3581	.	+	.	gene_id "preC-S"; transcript_id "preC-S"; exon_num
 D3L	stdin	exon	292	3581	.	+	.	gene_id "pgRNA"; transcript_id "pgRNA"; exon_number "1"; exon_id "pgRNA";
 D3L	stdin	exon	1280	3581	.	+	.	gene_id "preS1-T"; transcript_id "preS1-T"; exon_number "1"; exon_id "preS1-T.1";
 D3L	stdin	exon	1628	3581	.	+	.	gene_id "preS2-T"; transcript_id "preS2-T"; exon_number "1"; exon_id "preS2-T.1";
-D3L	stdin	exon	1685	3581	.	+	.	gene_id "S-T"; transcript_id "S-T"; exon_number "1"; exon_id "S-T.1;
+D3L	stdin	exon	1685	3581	.	+	.	gene_id "S-T"; transcript_id "S-T"; exon_number "1"; exon_id "S-T.1";
 D3L	stdin	exon	2871	3581	.	+	.	gene_id "X-T"; transcript_id "X-T"; exon_number "1"; exon_id "X-T.1";
