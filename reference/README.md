@@ -8,7 +8,7 @@ Microb Genom 2021  DOI: 10.1099/mgen.0.000492. https://www.ncbi.nlm.nih.gov/pubm
 To it we have added the six major canonical transcripts, as identified here :</br>
 Single-Nucleotide Resolution Mapping of Hepatitis B Virus Promoters in Infected Human Livers and Hepatocellular Carcinoma</br>
 K. Altinel, K. Hashimoto, Y. Wei, C. Neuveut, I. Gupta, A. M. Suzuki, et al.</br>
-J Virol 2016 Vol. 90 Issue 23 Pages 10811-10822 DOI: 10.1128/JVI.01625-16 https://www.ncbi.nlm.nih.gov/pubmed/27681123</br>
+J Virol 2016 <ul>90</ul>:10811-10822 DOI: 10.1128/JVI.01625-16 https://www.ncbi.nlm.nih.gov/pubmed/27681123</br>
 </p>
 
 The sequence of the plasmid backbone (pUC57.fa) used for the HBV1.3 construct is also included.</br>
