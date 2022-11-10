@@ -1,6 +1,6 @@
 ###
 ### R Script to extract the 5' and 3' regions adjacent to HBV sequences.
-### for subqsequent chimera mapping.
+### for subsequent chimera mapping.
 ###
 library(Rsamtools)
 
