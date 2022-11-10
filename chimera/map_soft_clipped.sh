@@ -1,5 +1,5 @@
 #!/bin/bash
-### Soft clipping of reads script using pbmm2
+### Soft clipping of reads script using pbmm2 and samtools
 ###
 ### "BMRC" is the name of the server cluster we used for analysis.
 ### other systems will require local versions of these initiation calls
