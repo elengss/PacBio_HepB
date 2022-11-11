@@ -4,7 +4,7 @@
 ### "BMRC" is the name of the server cluster we used for analysis.
 ### other systems will require local versions of these initiation calls
 ### This is the call in terminal on our system (slurm interface) :
-### sbatch --mem=0 -p short align-script.sh
+### sbatch --mem=0 -p short map_soft_clipped.sh
 ### The --mem=0 parameter sets memory to the maximum available 
 ### Local information for BMRC cluster :
 echo "------------------------------------------------" 
