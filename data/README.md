@@ -9,14 +9,14 @@ The original sample names, the replicates to which they belong,the Iso-Seq Expre
 
 Fastq files :</br>
 Sample name	Sample group 	Primer	Fastq file name							MD5 Checksum</br>
-WT-a		WT		bc1002	demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq	3e796d297d69b2fae759962bb8d5d488
-WT-b		WT		bc1003	demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8
-siCTCF-a	siCTCF	bc1004	demultiplex.dT_bc1004RC_PB_3p--dT_PB_5p.hifi_reads.fastq	af753c08d9b1536224dd2331b608ec7f
-siCTCF-b	siCTCF	bc1009	demultiplex.dT_bc1009RC_PB_3p--dT_PB_5p.hifi_reads.fastq	6bcb757640b915274d410e294b27c0c9
-HBV1.3-a	HBV1.3	bc1010	demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq	98dc193ac130bc8c1df912b813bec67d
-HBV1.3-b	HBV1.3	bc1012	demultiplex.dT_bc1012RC_PB_3p--dT_PB_5p.hifi_reads.fastq	b7c718ffa76abc78fd1a351d1fb77484
-BS1-2-a		BS1-2	bc1013	demultiplex.dT_bc1013RC_PB_3p--dT_PB_5p.hifi_reads.fastq	7f782f665c73c12d42e498ae56df04fc
-BS1-2-b		BS1-2	bc1015	demultiplex.dT_bc1015RC_PB_3p--dT_PB_5p.hifi_reads.fastq	c32449e3b51b80a671afcdb4f43106e3
+WT-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bc1002&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;3e796d297d69b2fae759962bb8d5d488</br>
+WT-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bc1003&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;5c0e3eccd8d476d7e801ef518cd896f8</br>
+siCTCF-a&nbsp;&nbsp;&nbsp;&nbsp;siCTCF&nbsp;&nbsp;&nbsp;&nbsp;bc1004&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1004RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;af753c08d9b1536224dd2331b608ec7f</br>
+siCTCF-b&nbsp;&nbsp;&nbsp;&nbsp;siCTCF&nbsp;&nbsp;&nbsp;&nbsp;bc1009&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1009RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;6bcb757640b915274d410e294b27c0c9</br>
+HBV1.3-a&nbsp;&nbsp;&nbsp;&nbsp;HBV1.3&nbsp;&nbsp;&nbsp;&nbsp;bc1010&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;98dc193ac130bc8c1df912b813bec67d</br>
+HBV1.3-b&nbsp;&nbsp;&nbsp;&nbsp;HBV1.3&nbsp;&nbsp;&nbsp;&nbsp;bc1012&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1012RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;b7c718ffa76abc78fd1a351d1fb77484</br>
+BS1-2-a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BS1-2&nbsp;&nbsp;&nbsp;&nbsp;bc1013&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1013RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;7f782f665c73c12d42e498ae56df04fc</br>
+BS1-2-b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BS1-2&nbsp;&nbsp;&nbsp;&nbsp;bc1015&nbsp;&nbsp;&nbsp;&nbsp;demultiplex.dT_bc1015RC_PB_3p--dT_PB_5p.hifi_reads.fastq&nbsp;&nbsp;&nbsp;&nbsp;c32449e3b51b80a671afcdb4f43106e3</br>
 </br>
 All of these files have been deposited to the GEO database and can be downloaded via the following link : XXXXXXXX - (does not yet exist)
 
