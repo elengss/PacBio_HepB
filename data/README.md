@@ -9,8 +9,8 @@ The original sample names, the replicates to which they belong,the Iso-Seq Expre
 
 Fastq files :</br>
 Sample name	Sample group 	Primer	Fastq file name							MD5 Checksum</br>
-WT-a  WT&#9;bc1002&nbsp;&nbsp;demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq	3e796d297d69b2fae759962bb8d5d488</br>
-WT-b&#9;&#9;WT&#9;bc1003&nbsp;&nbsp;demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8</br>
+WT-a    WT&#9;bc1002&nbsp;&nbsp;demultiplex.dT_bc1002RC_PB_3p--dT_PB_5p.hifi_reads.fastq	3e796d297d69b2fae759962bb8d5d488</br>
+WT-b    WT&#9;bc1003&nbsp;&nbsp;demultiplex.dT_bc1003RC_PB_3p--dT_PB_5p.hifi_reads.fastq	5c0e3eccd8d476d7e801ef518cd896f8</br>
 siCTCF-a&#9;siCTCF&#9;bc1004	demultiplex.dT_bc1004RC_PB_3p--dT_PB_5p.hifi_reads.fastq	af753c08d9b1536224dd2331b608ec7f</br>
 siCTCF-b&#9;siCTCF&#9;bc1009	demultiplex.dT_bc1009RC_PB_3p--dT_PB_5p.hifi_reads.fastq	6bcb757640b915274d410e294b27c0c9</br>
 HBV1.3-a&#9;HBV1.3&#9;bc1010	demultiplex.dT_bc1010RC_PB_3p--dT_PB_5p.hifi_reads.fastq	98dc193ac130bc8c1df912b813bec67d</br>
