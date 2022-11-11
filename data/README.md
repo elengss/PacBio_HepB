@@ -19,3 +19,5 @@ BS1-2-a&#9;BS1-2&#9;bc1013	demultiplex.dT_bc1013RC_PB_3p--dT_PB_5p.hifi_reads.fa
 BS1-2-b&#9;BS1-2&#9;bc1015	demultiplex.dT_bc1015RC_PB_3p--dT_PB_5p.hifi_reads.fastq	c32449e3b51b80a671afcdb4f43106e3</br>
 </br>
 All of these files have been deposited to the GEO database and can be downloaded via the following link : XXXXXXXX - (does not yet exist)
+
+This folder is used by the scripts as the location of all the data files generated. These can reach a total of ~20Gb in size.
