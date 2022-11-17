@@ -22,7 +22,7 @@ https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_41/GRCh38.p13.
 https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_41/gencode.v41.primary_assembly.annotation.gtf.gz
 
 
-The reference gtf file used in chimera identification (gencode.v42.chr_patch_hapl_scaff.annotation.gtf) can be downloded from here:
+The reference gtf file used in chimera identification (gencode.v42.chr_patch_hapl_scaff.annotation.gtf) can be downloaded from here:
 https://www.gencodegenes.org/human/
 
 The downloaded .gz archived files should be decompressed (gunzip utility) before use.
