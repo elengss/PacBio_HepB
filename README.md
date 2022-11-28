@@ -53,4 +53,4 @@ bio_pkgs <- c("Rsubread","edgeR","limma","GenomicAlignments","Rsamtools","Biostr
 BiocManager::install(bio_pkgs)<br/><br/>
 Cut and paste tha above command into R or Rstudio to install all the required packages.
 
-There are currently some problems running edgeR on M1 and M2 Macs. EdgeR requires fortran libraries to run. This requires a new installation of the gcc package which has these libraries (these are in addition to the compilers installed with Xtools).
+There are currently (December 2022) some problems running edgeR on M1 and M2 Macs. EdgeR requires fortran libraries to run. This requires a new installation of the gcc package which has these libraries (these are in addition to the compilers installed with Xtools).
