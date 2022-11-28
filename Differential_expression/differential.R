@@ -1,4 +1,11 @@
-
+##### 
+##### perform differential analysis on human and viral reads
+##### 
+##### Other comparisons just require a minor re-write of the code here
+##### All functions used are in the edgeR package.
+#####
+library(edgeR)
+####
 matrix(nrow=nrow(listmycounts[[1]][[1]]),ncol=8)->counts
 for(i in 1:8){
 listmycounts[[i]][[1]]->counts[,i]}
@@ -31,7 +38,7 @@ gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="TvI.csv")
 
-############### siRNA vs siCTCF
+############### All infection
 
 counts[,1:4]->counts2
 d0 <- DGEList(counts2)
@@ -58,7 +65,7 @@ gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="siSCRvssiCTCF.csv")
 
-######### do for BS vs WT
+######### All transfection
 
 
 counts[,5:8]->counts2
