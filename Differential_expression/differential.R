@@ -15,6 +15,9 @@ for(i in 1:length(all)){
 listmycounts[[i]]<-featureCounts(paste("data/",all[i],"_prec_iso_fq_human.bam",sep=""),annot.ext="reference/gencode.v42.chr_patch_hapl_scaff.annotation.gtf", isGTFAnnotationFile=TRUE, isPairedEnd=FALSE,allowMultiOverlap=F,GTF.featureType=c("transcript"),GTF.attrType=c("gene_id"),isLongRead=T,useMetaFeatures=T,minMQS=30,countMultiMappingReads=F,reportReads="CORE")
 print(i)
 }
+### Load in previuosly created Gene identifier lookup table
+read.table("reference/ENST_ENSG_GN",header=F)->gn
+gn[match(rownames(top.table),gn[,3]),2]->gene
 matrix(nrow=nrow(listmycounts[[1]][[1]]),ncol=8)->counts
 for(i in 1:8){
 listmycounts[[i]][[1]]->counts[,i]}
@@ -42,8 +45,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("/well/ansari/users/yem086/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="TvI.csv")
 
@@ -69,8 +70,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("/well/ansari/users/yem086/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="siSCRvssiCTCF.csv")
 
@@ -97,8 +96,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("/well/ansari/users/yem086/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="WTvsBS.csv")
 
