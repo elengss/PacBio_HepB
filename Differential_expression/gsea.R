@@ -1,3 +1,9 @@
+###
+### Simple GSEA profiling of data pair
+###
+### Load required libraries
+library(clusterProfiler)
+library(org.Hs.eg.db)
 
 read.csv("TvI.csv")->tvi
 tvi[which(tvi$adj.P.Val<0.0000001),]->tvi
