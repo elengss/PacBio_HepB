@@ -11,6 +11,10 @@ library(Rsubread)
 ##### produces a list of mapped transcripts for each sample, and also outputs files with suffix featureCounts which describe which reads map to each transcript
 listmycounts<-list()
 c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+### Read in lookup table of Gene IDS previously written in "quantify_human_chimera.R"
+read.table("reference/ENST_ENSG_GN",header=F)->gn
+gn[match(rownames(top.table),gn[,3]),2]->gene
+
 for(i in 1:length(all)){
   listmycounts[[i]]<-featureCounts(paste("data/",all[i],"_prec_iso_fq_human.bam",sep=""),annot.ext="reference/gencode.v42.chr_patch_hapl_scaff.annotation.gtf", isGTFAnnotationFile=TRUE, isPairedEnd=FALSE,allowMultiOverlap=F,GTF.featureType=c("transcript"),GTF.attrType=c("gene_id"),isLongRead=T,useMetaFeatures=T,minMQS=30,countMultiMappingReads=F,reportReads="CORE")
   print(i)
@@ -42,8 +46,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("reference/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="TvI.csv")
 
@@ -69,8 +71,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("reference/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="siSCRvssiCTCF.csv")
 
@@ -97,8 +97,6 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 head(top.table, 20)
-read.table("reference/ENST_ENSG_GN",header=F)->gn
-gn[match(rownames(top.table),gn[,3]),2]->gene
 cbind(gene,top.table)->TvI
 write.csv(TvI,file="WTvsBS.csv")
 
