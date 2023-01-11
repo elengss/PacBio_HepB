@@ -5,7 +5,7 @@ d3[(nrow(d3)-6):nrow(d3),]->d3n
 compv<-function(x,y){
 return(ifelse(abs(x-y)<12,0,1))}
 
-c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+c("1002","1003","1010","1012")->all
 allfiles<-list()
 for(i in 1:length(all)){
 data.frame(read.table(paste(all[i],".D3L.short",sep="")))->x
@@ -72,7 +72,7 @@ return(ifelse(abs(x-y)<12,0,1))}
 
 load("intronnew.Rd")
 
-c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+c("1002","1003","1010","1012")->all
 allfiles<-list()
 for(i in 1:length(all)){
 data.frame(read.table(paste(all[i],".D3L.short",sep="")))->x
@@ -258,8 +258,7 @@ write.csv(matstrict2,file="non-can.csv")
 
 load("allinst.Rd")
 allinst->allinslist
-
-c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+c("1002","1003","1010","1012")->all
 allfiles<-list()
 for(i in 1:length(all)){
 data.frame(read.table(paste(all[i],".D3L.short",sep="")))->x
