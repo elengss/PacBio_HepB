@@ -2,7 +2,7 @@
 ###
 ### load required library
 library(Rsubread)
-c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+c("1002","1003","1010","1012")->all
 list()->startpos
 list()->endpos
 list()->startneg
