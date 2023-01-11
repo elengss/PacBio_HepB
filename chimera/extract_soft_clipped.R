@@ -117,7 +117,7 @@ print("WARNING! This script is SLOW")
 print("Probably best to start it off at the end of the day and collect in the morning...")
 ###
 ### read in the file barcodes
-c("1002","1003","1004","1009","1010","1012","1013","1015")->all
+c("1002","1003","1010","1012")->all
 ###
 ### read bam file names and make calls to function.
 for(i in 1:length(all)){
