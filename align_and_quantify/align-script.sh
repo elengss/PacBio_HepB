@@ -59,7 +59,7 @@ rm $data_dir/fastqlines
 echo " "
 echo "Starting alignments to HBV :"
 ### MAP TO HEP B D3L
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
+for tmp in 1002 1003 1010 1012; do 
 echo aligning "$tmp" for HBV
 date +”%H:%M:%S”
 ### Count the number of sequences in each file, needed for TPM counts in R script
@@ -70,7 +70,7 @@ pbmm2 align --sort --preset ISOSEQ $ref_dir/D3L.fa $data_dir/$firstbit$tmp$lastb
 ### BMRC specific calls to load samtools
 module load samtools
 ### prepare files for R
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do
+for tmp in 1002 1003 1010 1012; do
 echo making and extracting sam file "$tmp" for HBV
 samtools view $data_dir/"$tmp"_D3L.bam -o $data_dir/"$tmp"_D3L.noheader.sam
 awk '{print $6}' $data_dir/"$tmp"_D3L.noheader.sam > cigar
@@ -86,7 +86,7 @@ date +”%H:%M:%S”
 echo " "
 echo "Starting alignments to Human :"
 ### MAP TO HUMAN
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015; do 
+for tmp in 1002 1003 1010 1012; do 
 pbmm2 align --sort --sort -j 12 -J 4 --preset ISOSEQ $ref_dir/GRCh38.p13.genome.fa $data_dir/$firstbit$tmp$lastbit $data_dir/"$tmp"_prec_iso_fq_human.bam; done
 echo " "
 date +”%H:%M:%S”
