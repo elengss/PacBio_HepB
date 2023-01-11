@@ -47,7 +47,7 @@ module load samtools
 ### concatenate human, viral and plasmid reads into a single fasta file
 cat $ref_dir/GRCh38.p13.genome.fa $ref_dir/D3L.fa $ref_dir/pUC57.fa > $ref_dir/humanviralplasmid.fa
 
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Extracting fastq clipping files and aligning "$tmp"
 pbmm2 align --sort --preset ISOSEQ $ref_dir/humanviralplasmid.fa $data_dir/"$tmp".positive.start.fastq $data_dir/"$tmp".positive.start.humanviralplasmid.bam
@@ -58,7 +58,7 @@ done
 
 
 module load samtools
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Removing short (<100 bp) sequences and making sam files of "$tmp"
 samtools view -h $data_dir/"$tmp".positive.start.humanviralplasmid.bam | awk 'length($10) > 100 || $1 ~ /^@/' | samtools view -bS - > $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.bam
@@ -67,7 +67,7 @@ samtools view -h $data_dir/"$tmp".negative.start.humanviralplasmid.bam | awk 'le
 samtools view -h $data_dir/"$tmp".negative.end.humanviralplasmid.bam | awk 'length($10) > 100 || $1 ~ /^@/' | samtools view -bS - > $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.bam
 done
 
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Indexing bam files of $data_dir/"$tmp" 
 samtools index $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.bam
@@ -76,7 +76,7 @@ samtools index $data_dir/"$tmp".negative.start.humanviralplasmid.filt100.bam
 samtools index $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.bam
 done
 
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Filtering plasmid vector sequences in bam files of "$tmp" 
 samtools view -h $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.bam pUC57 > $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid.bam
@@ -85,7 +85,7 @@ samtools view -h $data_dir/"$tmp".negative.start.humanviralplasmid.filt100.bam p
 samtools view -h $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.bam pUC57 > $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.plasmid.bam
 done
 
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Removing low quality reads in bam files of "$tmp" 
 samtools view -bq 30 $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid.bam > $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid30.bam
@@ -94,7 +94,7 @@ samtools view -bq 30 $data_dir/"$tmp".negative.start.humanviralplasmid.filt100.p
 samtools view -bq 30 $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.plasmid.bam > $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.plasmid30.bam
 done
 
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 samtools view -o $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid30.sam $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid30.bam
 samtools view -o $data_dir/"$tmp".positive.end.humanviralplasmid.filt100.plasmid30.sam $data_dir/"$tmp".positive.end.humanviralplasmid.filt100.plasmid30.bam
@@ -103,7 +103,7 @@ samtools view -o $data_dir/"$tmp".negative.end.humanviralplasmid.filt100.plasmid
 done
 ### Remove counter files if pre-existing...
 rm >> posstartlengths posendlengths negstartlengths negendlengths
-for tmp in 1002 1003 1004 1009 1010 1012 1013 1015
+for tmp in 1002 1003 1010 1012
 do
 echo Counting sam file linenumbers for $data_dir/"$tmp" 
 wc -l $data_dir/"$tmp".positive.start.humanviralplasmid.filt100.plasmid30.sam >> posstartlengths
