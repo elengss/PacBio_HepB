@@ -5,7 +5,7 @@ The files used in the paper were generated using an 8M cell in a PacBio Sequel I
 The completed runs were processed using the PacBio SMRTlink software to generate a "HiFi" sequencing dataset based on ccs sequencing.
 Once completed, the files were demultipexed using PacBio "SMRTlink" software to recover the sequences of the 8 samples loaded.
 
-The original sample names, the replicates to which they belong,the Iso-Seq Express cDNA PCR Primer Pair name used for barcoding, the sequencing service names for the 4 demultiplexed files and the MD5 checksum values for each of the files are listed below :</br>
+The original sample names, the replicates to which they belong,the Iso-Seq Express cDNA PCR Primer Pair name used for barcoding and the sequencing service names for the 4 demultiplexed files are listed below :</br>
 
 Fastq files :</br>
 * Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fastq file name</br>
